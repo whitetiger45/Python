@@ -28,3 +28,23 @@ for x in tuple:
 
 s += "\n"
 print s
+#---------------------------------------
+dict = {}
+print "Dict size: " + str(len(dict))
+
+dict[1] = "one"
+dict[2] = "two"
+
+print "Dict size: " + str(len(dict))
+
+dict = {3:"three", 4:"four"}
+
+print "Dict size: " + str(len(dict))
+c = 1
+
+for x in dict:
+    print "Key: " + str(x) + "\nValue: ", dict[x]
+
+# list(dict)
+# for x in dict:
+#     print "Key: " + str(x) + "\nValue: ", dict[x]
