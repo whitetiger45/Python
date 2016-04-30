@@ -45,6 +45,9 @@ c = 1
 for x in dict:
     print "Key: " + str(x) + "\nValue: ", dict[x]
 
+powerEx = 2**3
+print "2^3: " + str(powerEx)
+
 # list(dict)
 # for x in dict:
 #     print "Key: " + str(x) + "\nValue: ", dict[x]
