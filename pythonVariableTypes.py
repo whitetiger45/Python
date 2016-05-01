@@ -48,6 +48,10 @@ for x in dict:
 powerEx = 2**3
 print "2^3: " + str(powerEx)
 
+x = raw_input("\nEnter x: ")
+y = raw_input("\nEnter y: ")
+powerEx = int(x)**int(y)
+print "\n" + str(x) + "^" + str(y) + ": " + str(powerEx)
 # list(dict)
 # for x in dict:
 #     print "Key: " + str(x) + "\nValue: ", dict[x]
