@@ -8,7 +8,7 @@ while calculate :
 
     op = raw_input("\nEnter an operand: ")
 #-------------------------------------------------------------------------
-    if int(op) >= 1 and int(op) < 7:
+    if int(op) >= 1 and int(op) < 8:
         x = raw_input("\nEnter x: ")
         y = raw_input("\nEnter y: ")
     elif int(op) == 9:
@@ -16,7 +16,7 @@ while calculate :
 #-------------------------------------------------------------------------
     if op == "+" or int(op) == 1: 
         userSelection = 1
-        calc = int(x) + int(y)
+        calc = float(x) + float(y)
         if int(op) == 1:
             op = "+"
     elif op == "-" or int(op) == 2:
@@ -61,7 +61,7 @@ while calculate :
 
 #-------------------------------------------------------------------------
     if userSelection >= 1 and userSelection < 7:
-        if int(y) != 0:
+        if float(y) != 0:
             print "\n" + str(x) + " " + str(op)  + " " + str(y) + ": " + str(calc)
     elif userSelection == 7 or userSelection == 8:
         print  "\nDecimal Value: " + str(x) + ", Hexidecimal Value: " + str(calc)
