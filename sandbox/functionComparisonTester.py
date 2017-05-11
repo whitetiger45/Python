@@ -41,7 +41,7 @@ t1 = (timeit.timeit('comprPrint(**items_dict)', number=1,globals=globals()))
 # t1 = (timeit.timeit('[ [print (k,items_dict[x][k]) for k,v in items_dict[x].items()] for x in items_dict ]', number=1,globals=globals()))
 t2 = (timeit.timeit('nested(items_dict)', number=1,globals=globals()))
 t3 = (timeit.timeit('[ reglr(v) for k,v in items_dict.items() ]', number=1,globals=globals()))
-_names = {'t1':t1,'t2':t2,'t3':t3}
+_names = {'list comprehension':t1,'nested for loop':t2,'list comprehension and for loop':t3}
 _comp = max(t1,t2,t3)
 _winner = [k for k,v in _names.items() if str(v) in str(_comp) ]
 print("{0}: {1} wins!".format(_winner, _names.get(_winner[0])))
