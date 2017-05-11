@@ -45,3 +45,5 @@ _names = {'t1':t1,'t2':t2,'t3':t3}
 _comp = max(t1,t2,t3)
 _winner = [k for k,v in _names.items() if str(v) in str(_comp) ]
 print("{0}: {1} wins!".format(_winner, _names.get(_winner[0])))
+
+[ print("{0}: {1}".format(k,v)) for k,v in _names.items() ]
